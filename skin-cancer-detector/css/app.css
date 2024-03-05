@@ -1,7 +1,7 @@
 
 body {
-  padding: 0;
   margin: 0;
+
   font-family: "Nunito", sans-serif;
 }
 
@@ -13,17 +13,16 @@ body {
 
 
 .mobilenet-demo-container {
-  background-color: #2b3436;
-  padding: 20px;
+  background-color: #0e2a47;
   box-sizing: border-box;
 }
 
 .mobilenet-demo-container h1 {
   font-size: 40px;
-  background-color: #24a8b9;
+  background-color: #dfc8ea;
   padding: 10px;
   margin: 0;
-  border-radius: 5px 5px 0 0;
+  /* border-radius: 5px 5px 0 0; */
   text-align: center;
   color: white;
 }
@@ -35,46 +34,51 @@ body {
 }
 
 .mobilenet-demo-container .input-button {
-  background-color: #24a8b9;
+  background-color: #dfc8ea;
   color: white;
   border-radius: 5px;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px;
+  border: none;
   cursor: pointer;
-  border: 1px solid #24a8b9;
   font-size: 18px;
-  margin: 20px auto;
+  margin: 20px 30px;
   display: block;
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .mobilenet-demo-container .input-button:hover {
-  background-color: #2b3436;
+  background-color: #0e2a47;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.22);
 }
 
 .mobilenet-demo-container .demo-output {
   display: flex;
-  background-color: #24a8b9;
+  background-color: #0e2a47;
   padding: 10px;
 }
 
 .mobilenet-demo-container .out-box {
   flex: 1;
   margin: 0 10px;
-  padding: 10px;
-  background-color: #2b3436;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #dfc8ea;
+}
+
+.mobilenet-demo-container .out-box img{
+  border-radius: 20px;
 }
 
 .mobilenet-demo-container .out-box p {
-  color: white;
+  color: #0e2a47;
   margin: 0;
   font-size: 20px;
 }
 
 .mobilenet-demo-container .out-box b {
-  color: #ffcc00;
+  color: red;
   font-size: 30px;
 }
 
