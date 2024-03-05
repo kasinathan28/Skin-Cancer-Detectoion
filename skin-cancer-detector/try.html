@@ -1,188 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="try.css" />
-    <title>Document</title>
+    <title>Skin Cancer Detector</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-</head>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="navbar">
-        <div class="left">
-            <h1>Skin Cancer Detector</h1>
+      <div class="left">
+        <h1>Skin Cancer Detector</h1>
+      </div>
+      <div class="right">
+        <div>
+          <button onclick="scrollToAbout()">About</button>
+          <button onclick="scrollToManual()">How to use ?</button>
         </div>
-        <div class="right">
-            <div>
-                <button onclick="scrollToAbout()">About</button>
-                <button onclick="scrollToManual()">How to use ?</button>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="displayContainer">
-        <div class="heading">
-            <h1>
-                We aim to provide valuable insights into common "skin" ailments,
-                including their causes, symptoms, and treatment options.
-            </h1>
-        </div>
-        <img src="./images/medicine.png" />
+      <div class="heading">
+        <h1>
+          We aim to provide valuable insights into common "skin" ailments,
+          including their causes, symptoms, and treatment options.
+        </h1>
+      </div>
+      <img src="./images/medicine.png" />
     </div>
     <div id="about" class="aboutContainer">
-        <div>
-            <h2>About</h2>
-        </div>
-        <div class="row">
-            <div class="cardContainer">
-                <div class="card" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
-                    <h3>Melanocytic Nevi (nv)</h3>
-                    <img src="./images/Melanocytic Nevi (nv).png" />
-                    <div class="card-body">
-                        <p>
-                            Description: Melanocytic nevi are commonly known as moles. They
-                            are benign growths composed of melanocytes, which are
-                            pigment-producing cells.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
-                    <h3>Melanoma (mel)</h3>
-                    <img src="./images/Melanoma (mel).png" />
-                    <div class="card-body">
-                        <p>
-                            Description: Melanoma, a skin cancer from melanocytes, can be
-                            cured early with surgery. It may be invasive or non-invasive. We
-                            cover all types except certain rare forms.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
-                    <h3>Benign Keratosis (bkl)</h3>
-                    <img src="./images/Benign Keratosis (bkl).png" />
-                    <div class="card-body">
-                        <p>
-                            Description:Benign keratosis encompasses seborrheic keratoses,
-                            solar lentigines, and lichen-planus like keratoses. Despite
-                            differences in appearance, they share biological traits and
-                            histopathological terms.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
-                    <h3>Basal Cell Carcinoma (bcc)</h3>
-                    <img src="./images/Basal Cell Carcinoma (bcc).png" />
-                    <div class="card-body">
-                        <p>
-                            Description:Basal cell carcinoma, a common form of skin cancer,
-                            rarely spreads but can grow destructively if untreated. It
-                            presents in various morphological forms, all covered here.
-                        </p>
-                    </div>
-                </div>
+      <div>
+        <h2>About</h2>
+      </div>
+      <div class="row">
+        <div class="cardContainer">
+          <div
+            class="card"
+            onmouseover="hoverImage(this)"
+            onmouseout="unhoverImage(this)"
+          >
+            <h3>Melanocytic Nevi (nv)</h3>
+            <img src="./images/Melanocytic Nevi (nv).png" />
+            <div class="card-body">
+              <p>
+                Description: Melanocytic nevi are commonly known as moles. They
+                are benign growths composed of melanocytes, which are
+                pigment-producing cells.
+              </p>
             </div>
+          </div>
+          <div
+            class="card"
+            onmouseover="hoverImage(this)"
+            onmouseout="unhoverImage(this)"
+          >
+            <h3>Melanoma (mel)</h3>
+            <img src="./images/Melanoma (mel).png" />
+            <div class="card-body">
+              <p>
+                Description: Melanoma, a skin cancer from melanocytes, can be
+                cured early with surgery. It may be invasive or non-invasive. We
+                cover all types except certain rare forms.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            onmouseover="hoverImage(this)"
+            onmouseout="unhoverImage(this)"
+          >
+            <h3>Benign Keratosis (bkl)</h3>
+            <img src="./images/Benign Keratosis (bkl).png" />
+            <div class="card-body">
+              <p>
+                Description:Benign keratosis encompasses seborrheic keratoses,
+                solar lentigines, and lichen-planus like keratoses. Despite
+                differences in appearance, they share biological traits and
+                histopathological terms.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            onmouseover="hoverImage(this)"
+            onmouseout="unhoverImage(this)"
+          >
+            <h3>Basal Cell Carcinoma (bcc)</h3>
+            <img src="./images/Basal Cell Carcinoma (bcc).png" />
+            <div class="card-body">
+              <p>
+                Description:Basal cell carcinoma, a common form of skin cancer,
+                rarely spreads but can grow destructively if untreated. It
+                presents in various morphological forms, all covered here.
+              </p>
+            </div>
+          </div>
+        </div>
 
-            <div class="cardContainer">
-                <div class="card" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
-                    <h3>Actinic Keratoses (akiec)</h3>
-                    <img src="./images/Actinic Keratoses (akiec).png" />
-                    <div class="card-body">
-                        <p>
-                            Description: Actinic keratoses and Bowen’s disease are
-                            non-invasive forms of squamous cell carcinoma. They're
-                            precursors to invasive cancer but can be treated locally without
-                            surgery.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
-                    <h3>Vascular Skin Lesions (vasc)</h3>
-                    <img src="./images/Vascular Skin Lesions (vasc).png" />
-                    <div class="card-body">
-                        <p>
-                            Description: Vascular skin lesions in the dataset range from
-                            cherry angiomas to angiokeratomas and pyogenic granulomas.
-                            Hemorrhage is also included in this category.
-                        </p>
-                    </div>
-                </div>
-                <div class="card" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
-                    <h3>Dermatofibroma (df)</h3>
-                    <img src="./images/Dermatofibroma (df).png" />
-                    <div class="card-body">
-                        <p>
-                            Description: Dermatofibroma is a benign skin lesion regarded as
-                            either a benign proliferation or an inflammatory reaction to
-                            minimal trauma. It is brown often showing a central zone of
-                            fibrosis dermatoscopically.
-                        </p>
-                    </div>
-                </div>
+        <div class="cardContainer">
+          <div
+            class="card"
+            onmouseover="hoverImage(this)"
+            onmouseout="unhoverImage(this)"
+          >
+            <h3>Actinic Keratoses (akiec)</h3>
+            <img src="./images/Actinic Keratoses (akiec).png" />
+            <div class="card-body">
+              <p>
+                Description: Actinic keratoses and Bowen’s disease are
+                non-invasive forms of squamous cell carcinoma. They're
+                precursors to invasive cancer but can be treated locally without
+                surgery.
+              </p>
             </div>
+          </div>
+          <div
+            class="card"
+            onmouseover="hoverImage(this)"
+            onmouseout="unhoverImage(this)"
+          >
+            <h3>Vascular Skin Lesions (vasc)</h3>
+            <img src="./images/Vascular Skin Lesions (vasc).png" />
+            <div class="card-body">
+              <p>
+                Description: Vascular skin lesions in the dataset range from
+                cherry angiomas to angiokeratomas and pyogenic granulomas.
+                Hemorrhage is also included in this category.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card"
+            onmouseover="hoverImage(this)"
+            onmouseout="unhoverImage(this)"
+          >
+            <h3>Dermatofibroma (df)</h3>
+            <img src="./images/Dermatofibroma (df).png" />
+            <div class="card-body">
+              <p>
+                Description: Dermatofibroma is a benign skin lesion regarded as
+                either a benign proliferation or an inflammatory reaction to
+                minimal trauma. It is brown often showing a central zone of
+                fibrosis dermatoscopically.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div id="enlargedImgContainer" class="enlargedImgContainer">
-        <img id="enlargedImg" src="" alt="Enlarged Image" />
+      <img id="enlargedImg" src="" alt="Enlarged Image" />
     </div>
 
     <div id="manual" class="manual">
-        <div>
-            <h1>How to Use?</h1>
-        </div>
-        <div class="content">
-            <ul>
-                <li>Click on the button below to navigate to the testing page.</li>
-                <li>A demo image and the details of the affected disease will be shown.</li>
-                <li>You need to load the "AI MODEL" to make a prediction.</li>
-                <li>After loading the model, upload the image of your skin to make the prediction.</li>
-            </ul>
-            <button onclick="HandleTest()">Test Now</button>
-        </div>
-    </div>
-    
+      <div>
+        <h1>How to Use?</h1>
+      </div>
+      <div class="content">
+        <ul>
+          <li>Click on the button below to navigate to the testing page.</li>
+          <li>
+            A demo image and the details of the affected disease will be shown.
+          </li>
+          <li>You need to load the "AI MODEL" to make a prediction.</li>
+          <li>
+            After loading the model, upload the image of your skin to make the
+            prediction.
+          </li>
+        </ul>
+        <button onclick="HandleTest()">Test Now</button>
+      </div>
 
+      <div class="rev">
+        <div class="revision">
+            <!-- Add a table to display predictions -->
+<table id="predictionTable" style="display: none;">
+    <thead>
+      <tr>
+        <th>Predicted Class</th>
+        <th>Probability</th>
+      </tr>
+    </thead>
+    <tbody id="predictionTableBody">
+      <!-- Table body will be populated dynamically -->
+    </tbody>
+  </table>
+  
+  <!-- Add a loading indicator -->
+  <div id="loadingIndicator" style="display: none;">
+    Loading...
+  </div>
+  
+          <button onclick="GetPred()">Show Previos Test</button>
+        </div>
+      </div>
+    </div>
 
     <script>
-        function scrollToAbout() {
-            document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
-        }
-        function scrollToManual() {
-            document.querySelector("#manual").scrollIntoView({ behavior: "smooth" });
-        }
+      function scrollToAbout() {
+        document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
+      }
+      function scrollToManual() {
+        document
+          .querySelector("#manual")
+          .scrollIntoView({ behavior: "smooth" });
+      }
 
-        function navigate(url) {
-            // Define your navigation logic here
-            // For example:
-            window.location.href = url;
-        }
+      function navigate(url) {
+        window.location.href = url;
+      }
 
-        function HandleTest() {
-            navigate('index.html');
-        }
+      function HandleTest() {
+        navigate("index.html");
+      }
 
-        function hoverImage(element) {
-            var imgSrc = element.querySelector("img").src;
-            var enlargedImg = document.getElementById("enlargedImg");
-            enlargedImg.src = imgSrc;
-            var enlargedImgContainer = document.getElementById(
-                "enlargedImgContainer"
-            );
-            enlargedImgContainer.classList.add("active");
-        }
+      async function GetPred() {
+        try {
+          const loadingIndicator = document.getElementById("loadingIndicator");
+          loadingIndicator.style.display = "block"; // Show loading indicator
 
-        function unhoverImage(element) {
-            var enlargedImgContainer = document.getElementById(
-                "enlargedImgContainer"
-            );
-            enlargedImgContainer.classList.remove("active");
+          const response = await fetch("http://localhost:5000/predictions");
+          const data = await response.json(); // Extract JSON data from the response
+          console.log(data); // Log the data to the console
+
+          // Populate the table with prediction data
+          const predictionTable = document.getElementById("predictionTable");
+          const predictionTableBody = document.getElementById(
+            "predictionTableBody"
+          );
+          predictionTableBody.innerHTML = ""; // Clear previous data
+
+          data.forEach((prediction) => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+        <td>${prediction.predicted_class}</td>
+        <td>${prediction.probability}</td>
+      `;
+            predictionTableBody.appendChild(row);
+          });
+
+          predictionTable.style.display = "table"; // Show the table
+
+          loadingIndicator.style.display = "none"; // Hide loading indicator
+        } catch (error) {
+          console.log("Error fetching the predictions", error);
         }
+      }
+
+      function hoverImage(element) {
+        var imgSrc = element.querySelector("img").src;
+        var enlargedImg = document.getElementById("enlargedImg");
+        enlargedImg.src = imgSrc;
+        var enlargedImgContainer = document.getElementById(
+          "enlargedImgContainer"
+        );
+        enlargedImgContainer.classList.add("active");
+      }
+
+      function unhoverImage(element) {
+        var enlargedImgContainer = document.getElementById(
+          "enlargedImgContainer"
+        );
+        enlargedImgContainer.classList.remove("active");
+      }
     </script>
-</body>
-
+  </body>
 </html>

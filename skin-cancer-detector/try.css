@@ -205,6 +205,7 @@ body {
     color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
 }
 
 .manual h1 {
@@ -240,3 +241,47 @@ body {
 .manual button:active{
     transform: translateY(10px);
 }
+
+
+.revision{
+    background: #b9b5e2;
+    width: 1000px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.revision button{
+    margin-top: 20px;
+}
+
+.rev{
+    margin:10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #0e2a47;
+}
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  #loadingIndicator {
+    display: none;
+    margin-top: 20px;
+  }
+  
